@@ -24,7 +24,7 @@ exports.pv = async () => {
   const now = new Date();
   const res = await GoldLog.create({
     timestamp: now.getTime(),
-    content: now.toLocaleString(),
+    content: now.toDateString(),
     uniqueString: "cow_year_pv",
   });
   return res;
